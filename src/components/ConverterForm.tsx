@@ -5,8 +5,8 @@ import Image from "next/image";
 import ArrowLeft from "@/assets/arrow-left.svg";
 
 export default function ConverterForm(): JSX.Element {
-  const [fromCurrency, setFromCurrency] = useState("");
-  const [toCurrency, setToCurrency] = useState("");
+  const [fromCurrency, setFromCurrency] = useState("AED");
+  const [toCurrency, setToCurrency] = useState("AED");
   const [amount, setAmount] = useState("");
   const [result, setResult] = useState("");
 

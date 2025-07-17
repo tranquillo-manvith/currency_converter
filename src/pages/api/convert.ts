@@ -9,8 +9,10 @@ export default async function convert(
   }
   const { from, to, amount } = req.body;
   try {
+    console.log("API KEY:", process.env.NEXT_PUBLIC_API_KEY);
+
     const apiData = await fetch(
-      `https://v6.exchangerate-api.com/v6/797938b8c660b81ee98d6d0b/latest/${from}`
+      `https://v6.exchangerate-api.com/v6/${process.env.NEXT_PUBLIC_API_KEY}/latest/${from}`
     );
 
     const data = await apiData.json();

@@ -13,10 +13,10 @@ export default function Navbar(): JSX.Element {
             <Link className="hover:text-[#858585]" href={"/"}>
               Home
             </Link>
-            <Link className="hover:text-[#858585]" href={"/other_projects"}>
+            <Link className="hover:text-[#858585]" href={"/"}>
               Other Projects
             </Link>
-            <Link className="hover:text-[#858585]" href={"/details"}>
+            <Link className="hover:text-[#858585]" href={"/"}>
               Details
             </Link>
           </li>
